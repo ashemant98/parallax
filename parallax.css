@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+#wrapper{
+   height:100vh;
+   overflow-x: hidden;
+   overflow-y: auto;
+   perspective: 10px;
+   scroll-behavior: smooth;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index:-1;
+}
+.background{
+    transform:translateZ(-40px) scale(6); 
+}
+.foreground{
+    transform: translateZ(-20px) scale(3);
+}
+.background,.foreground{
+position: absolute;
+height: 100%;
+width: 100%;
+object-fit: cover;
+z-index:-1;
+
+}
+
+h1{
+    position: absolute;
+    top: 5rem;
+    font-size: 8rem;
+    color: white;
+    text-shadow: 0 0 10px rgba(0,0,0,0,3);
+}
+
+section{
+    background-color: rgb(45,45,45);
+    color: white;
+    padding: 5rem 0;
+    font-size: x-large;
+}
+.secheading{
+    font-size: 3rem;
+    padding: 0 10 rem;
+}
+
+.text{
+    font-size: 1.2rem;
+    padding: 0 10 rem;
+    margin: 5 0rem;
+}
+.bg{
+    position: relative;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 600px;
+   
+}
+
+.desc{
+    position: absolute;
+    top: 5rem;
+    font-size: 5rem;
+    color: white;
+    text-shadow: 0 0 10px rgba(0,0,0,0,3);
+    align-items: center;
+}
+.bg0{
+    background-image: url(kasol_base.jpg);
+}
+.bg1{
+    background-image: url(Grahan_base.jpg);
+   
+}
+
+.bg2{
+    background-image: url(min_tach.jpg);
+}
+
+.bg3{
+    background-image: url(sukoon.jpg);
+}
